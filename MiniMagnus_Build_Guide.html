@@ -1,0 +1,1432 @@
+<html>
+               <head>
+                 <base href="file:///home/wings/Projects/minimagnus-build-guide/MiniMagnus_Build_Guide.html/">
+                 <meta charset="UTF-8">
+                 <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1">
+                 <style id="style">
+@font-face {
+  font-family: 'Lato';
+  src: url('file:///usr/lib/boostnote/resources/app/resources/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+       url('file:///usr/lib/boostnote/resources/app/resources/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+       url('file:///usr/lib/boostnote/resources/app/resources/fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('file:///usr/lib/boostnote/resources/app/resources/fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+       url('file:///usr/lib/boostnote/resources/app/resources/fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+       url('file:///usr/lib/boostnote/resources/app/resources/fonts/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url('file:///usr/lib/boostnote/resources/app/resources/fonts/MaterialIcons-Regular.woff2') format('woff2'),
+       url('file:///usr/lib/boostnote/resources/app/resources/fonts/MaterialIcons-Regular.woff') format('woff'),
+       url('file:///usr/lib/boostnote/resources/app/resources/fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  font-size: 16px;
+  padding: 15px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+body .katex-display > .katex {
+  white-space: nowrap;
+}
+body .katex {
+  white-space: initial;
+}
+body .katex .katex-html {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+}
+body .katex .mfrac>.vlist>span:nth-child(2) {
+  top: 0 !important;
+}
+body .katex-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  margin: -5px;
+  border-radius: 5px;
+}
+body .flowchart-error,
+body .sequence-error .chart-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-pack: left;
+  -moz-box-pack: left;
+  -o-box-pack: left;
+  -ms-flex-pack: left;
+  -webkit-justify-content: left;
+  justify-content: left;
+}
+li label.taskListItem {
+  margin-left: -1.8em;
+}
+li label.taskListItem.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+li.taskListItem.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+div.math-rendered {
+  text-align: center;
+}
+.math-failed {
+  background-color: rgba(255,0,0,0.1);
+  color: #d90000;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+sup {
+  position: relative;
+  top: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+sub {
+  position: relative;
+  bottom: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+a {
+  color: #2bac8f;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: -5px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+}
+a img {
+  vertical-align: sub;
+}
+a:hover {
+  color: #2eb899;
+  text-decoration: underline;
+  background-color: rgba(255,201,92,0.3);
+}
+a:visited {
+  color: #2bac8f;
+}
+hr {
+  border-top: none;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 15px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1em 0 1.5em;
+  line-height: 1.4;
+  font-weight: bold;
+  word-wrap: break-word;
+  padding: 0.2em 0 0.2em;
+}
+h1 {
+  font-size: 2.55em;
+  line-height: 1.2;
+  border-bottom: solid 1px #d0d0d0;
+}
+h1:first-child {
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: solid 1px #d0d0d0;
+}
+h2:first-child {
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+h4 {
+  font-size: 1.25em;
+  line-height: 1.4;
+}
+h5 {
+  font-size: 1em;
+  line-height: 1.1;
+}
+h6 {
+  font-size: 1em;
+  color: #777;
+}
+p {
+  line-height: 1.6em;
+  margin: 0 0 1em;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+img {
+  cursor: zoom-in;
+  max-width: 100%;
+}
+strong,
+b {
+  font-weight: bold;
+}
+em,
+i {
+  font-style: italic;
+}
+s,
+del,
+strike {
+  text-decoration: line-through;
+}
+u {
+  text-decoration: underline;
+}
+blockquote {
+  border-left: solid 4px #3fb399;
+  margin: 0 0 1em;
+  padding: 0 25px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ul li {
+  display: list-item;
+}
+ul li.taskListItem {
+  list-style: none;
+}
+ul li.taskListItem>input {
+  margin-left: -1.6em;
+}
+ul li.taskListItem>p {
+  margin-left: -1.8em;
+}
+ul li p {
+  margin: 0;
+}
+ul>li>ul,
+ul>li>ol {
+  margin: 0;
+}
+ul>li>ul {
+  list-style-type: circle;
+}
+ul>li>ul>li>ul {
+  list-style-type: square;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ol li {
+  display: list-item;
+}
+ol li p {
+  margin: 0;
+}
+ol>li>ul,
+ol>li>ol {
+  margin: 0;
+}
+code {
+  padding: 0.2em 0.4em;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 2px;
+}
+pre {
+  padding: 0.5rem !important;
+  border: solid 1px #d1d1d1;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0 0 1rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  line-height: 1.4em;
+}
+pre code {
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+pre.CodeMirror {
+  height: initial;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+pre.CodeMirror>code {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-x: auto;
+}
+pre.mermaid svg {
+  max-width: 100% !important;
+}
+pre>span.filename {
+  margin: -0.5rem 100% 0.5rem -0.5rem;
+  padding: 0.125rem 0.375rem;
+  background-color: #777;
+  color: #fff;
+}
+pre>span.filename:empty {
+  display: none;
+}
+pre>span.lineNumber {
+  display: none;
+  font-size: 1em;
+  padding: 0.5rem 0;
+  margin: -0.5rem 0.5rem -0.5rem -0.5rem;
+  border-right: 1px solid;
+  text-align: right;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+pre>span.lineNumber.CodeMirror-gutters {
+  position: initial;
+  top: initial;
+  left: initial;
+  min-height: 0 !important;
+}
+pre>span.lineNumber>span {
+  display: block;
+  padding: 0 0.5em 0;
+}
+table {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+  overflow-x: auto;
+}
+table thead tr {
+  background-color: #fff;
+}
+table thead th {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 1px 0 2px 1px;
+  border-color: #d0d0d0;
+  font-weight: bold;
+}
+table thead th:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+table tbody tr:nth-child(2n + 1) {
+  background-color: #f9f9f9;
+}
+table tbody tr:nth-child(2n) {
+  background-color: #fff;
+}
+table tbody td {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 0 0 1px 1px;
+  border-color: #d0d0d0;
+}
+table tbody td:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+kbd {
+  background-color: #fafbfc;
+  border: solid 1px #d0d0d0;
+  border-bottom-color: #888;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 #959da5;
+  box-shadow: inset 0 -1px 0 #959da5;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1;
+  padding: 3px 5px;
+}
+.admonition.note,
+.admonition.hint,
+.admonition.danger,
+.admonition.caution,
+.admonition.error,
+.admonition.question,
+.admonition.quote,
+.admonition.abstract,
+.admonition.attention {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  position: relative;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  border-left: 0.4rem solid #448aff;
+  border-radius: 0.2rem;
+  overflow: auto;
+}
+html .admonition>:last-child {
+  margin-bottom: 1.2rem;
+}
+.admonition .admonition {
+  margin: 1em 0;
+}
+.admonition p {
+  margin-top: 0.5em;
+}
+.admonition.note>.admonition-title:before,
+.admonition.hint>.admonition-title:before,
+.admonition.danger>.admonition-title:before,
+.admonition.caution>.admonition-title:before,
+.admonition.error>.admonition-title:before,
+.admonition.question>.admonition-title:before,
+.admonition.quote>.admonition-title:before,
+.admonition.abstract>.admonition-title:before,
+.admonition.attention>.admonition-title:before {
+  position: absolute;
+  left: 1.2rem;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+/* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+/* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+/* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+/* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.admonition.note>.admonition-title,
+.admonition.hint>.admonition-title,
+.admonition.danger>.admonition-title,
+.admonition.caution>.admonition-title,
+.admonition.error>.admonition-title,
+.admonition.question>.admonition-title,
+.admonition.quote>.admonition-title,
+.admonition.abstract>.admonition-title,
+.admonition.attention>.admonition-title {
+  margin: 0 -1.2rem;
+  padding: 0.8rem 1.2rem 0.8rem 4rem;
+  border-bottom: 0.1rem solid rgba(68,138,255,0.1);
+  background-color: rgba(68,138,255,0.1);
+  font-weight: 700;
+}
+.admonition>.admonition-title:last-child {
+  margin-bottom: 0;
+}
+.admonition.note {
+  border-left-color: #0288d1;
+}
+.admonition.note>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(2,136,209,0.2);
+  background-color: rgba(2,136,209,0.2);
+}
+.admonition.note>.admonition-title:before {
+  color: #0288d1;
+  content: "note";
+}
+.admonition.hint {
+  border-left-color: #009688;
+}
+.admonition.hint>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(0,150,136,0.2);
+  background-color: rgba(0,150,136,0.2);
+}
+.admonition.hint>.admonition-title:before {
+  color: #009688;
+  content: "info_outline";
+}
+.admonition.danger {
+  border-left-color: #c2185b;
+}
+.admonition.danger>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(194,24,91,0.2);
+  background-color: rgba(194,24,91,0.2);
+}
+.admonition.danger>.admonition-title:before {
+  color: #c2185b;
+  content: "block";
+}
+.admonition.caution {
+  border-left-color: #ffa726;
+}
+.admonition.caution>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(255,167,38,0.2);
+  background-color: rgba(255,167,38,0.2);
+}
+.admonition.caution>.admonition-title:before {
+  color: #ffa726;
+  content: "warning";
+}
+.admonition.error {
+  border-left-color: #d32f2f;
+}
+.admonition.error>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(211,47,47,0.2);
+  background-color: rgba(211,47,47,0.2);
+}
+.admonition.error>.admonition-title:before {
+  color: #d32f2f;
+  content: "error_outline";
+}
+.admonition.question {
+  border-left-color: #64dd17;
+}
+.admonition.question>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(100,221,23,0.2);
+  background-color: rgba(100,221,23,0.2);
+}
+.admonition.question>.admonition-title:before {
+  color: #64dd17;
+  content: "help_outline";
+}
+.admonition.quote {
+  border-left-color: #9e9e9e;
+}
+.admonition.quote>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(158,158,158,0.2);
+  background-color: rgba(158,158,158,0.2);
+}
+.admonition.quote>.admonition-title:before {
+  color: #9e9e9e;
+  content: "format_quote";
+}
+.admonition.abstract {
+  border-left-color: #00b0ff;
+}
+.admonition.abstract>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(0,176,255,0.2);
+  background-color: rgba(0,176,255,0.2);
+}
+.admonition.abstract>.admonition-title:before {
+  color: #00b0ff;
+  content: "subject";
+}
+.admonition.attention {
+  border-left-color: #455a64;
+}
+.admonition.attention>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(69,90,100,0.2);
+  background-color: rgba(69,90,100,0.2);
+}
+.admonition.attention>.admonition-title:before {
+  color: #455a64;
+  content: "priority_high";
+}
+dl {
+  margin: 2rem 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  width: 100%;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid #d0d0d0;
+  background-color: #fff;
+}
+dt {
+  border-top: 1px solid #d0d0d0;
+  font-weight: bold;
+  text-align: right;
+  overflow: hidden;
+  -webkit-flex-basis: 20%;
+  flex-basis: 20%;
+  padding: 0.4rem 0.9rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+dd {
+  border-top: 1px solid #d0d0d0;
+  -webkit-flex-basis: 80%;
+  flex-basis: 80%;
+  padding: 0.4rem 0.9rem;
+  min-height: 2.5rem;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+dd + dd {
+  margin-left: 20%;
+}
+pre.fence {
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+pre.fence .chart,
+pre.fence .flowchart,
+pre.fence .mermaid,
+pre.fence .sequence {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #fff;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+pre.fence .chart canvas,
+pre.fence .flowchart canvas,
+pre.fence .mermaid canvas,
+pre.fence .sequence canvas,
+pre.fence .chart svg,
+pre.fence .flowchart svg,
+pre.fence .mermaid svg,
+pre.fence .sequence svg {
+  max-width: 100% !important;
+}
+pre.fence .chart svg[ratio],
+pre.fence .flowchart svg[ratio],
+pre.fence .mermaid svg[ratio],
+pre.fence .sequence svg[ratio] {
+  width: 100%;
+}
+pre.fence .gallery {
+  width: 100%;
+  height: 50vh;
+}
+pre.fence .gallery .carousel .carousel-main img {
+  min-width: auto;
+  max-width: 100%;
+  min-height: auto;
+  max-height: 100%;
+}
+pre.fence .gallery .carousel .carousel-footer::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+pre.fence .gallery .carousel .carousel-main,
+pre.fence .gallery .carousel .carousel-footer {
+  background-color: #fff;
+}
+pre.fence .gallery .carousel .prev,
+pre.fence .gallery .carousel .next {
+  color: #333;
+  background-color: rgba(0,0,0,0.3);
+}
+.markdownIt-TOC-wrapper {
+  list-style: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin-left: 15px;
+  z-index: 1000;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.2s ease-in-out;
+  -o-transition: -o-transform 0.2s ease-in-out;
+  -ms-transition: -ms-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.markdownIt-TOC-wrapper .markdownIt-TOC {
+  display: block;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 25px;
+  padding-left: 38px;
+}
+.markdownIt-TOC-wrapper,
+.markdownIt-TOC-wrapper:before {
+  background-color: #2c3033;
+  color: #ddd;
+}
+.markdownIt-TOC-wrapper:hover {
+  -webkit-transform: translateX(-15px);
+  -moz-transform: translateX(-15px);
+  -o-transform: translateX(-15px);
+  -ms-transform: translateX(-15px);
+  transform: translateX(-15px);
+}
+.markdownIt-TOC-wrapper:before {
+  content: 'TOC';
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 60px;
+  left: -29px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+body[data-theme="dark"] {
+  color: #f9f9f9;
+  border-color: #444b59;
+  background-color: #2c3033;
+}
+body[data-theme="dark"] a:hover {
+  background-color: rgba(90,214,186,0.2) !important;
+}
+body[data-theme="dark"] code {
+  color: #ea6730;
+  border-color: #3d4450;
+  background-color: #363a3e;
+}
+body[data-theme="dark"] pre {
+  border-color: #474f5c;
+}
+body[data-theme="dark"] pre code {
+  background-color: transparent;
+}
+body[data-theme="dark"] label.taskListItem {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table thead tr {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n + 1) {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n) {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] kbd {
+  background-color: #444b59;
+  color: #f9f9f9;
+}
+body[data-theme="dark"] dl {
+  border-color: #444b59;
+  background-color: #282b2e;
+}
+body[data-theme="dark"] dt {
+  border-color: #444b59;
+}
+body[data-theme="dark"] dd {
+  border-color: #444b59;
+  background-color: #2c3033;
+}
+body[data-theme="dark"] pre.fence .gallery .carousel-main,
+body[data-theme="dark"] pre.fence .gallery .carousel-footer {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] pre.fence .gallery .prev,
+body[data-theme="dark"] pre.fence .gallery .next {
+  color: #ddd;
+  background-color: #3a404c;
+}
+body[data-theme="dark"] .markdownIt-TOC-wrapper,
+body[data-theme="dark"] .markdownIt-TOC-wrapper:before {
+  background-color: #1c1f25;
+  color: #f9f9f9;
+}
+body[data-theme=solarized-dark] {
+  color: #93a1a1;
+  border-color: #444b59;
+  background-color: #073642;
+}
+body[data-theme=solarized-dark] table thead tr {
+  background-color: #06313b;
+}
+body[data-theme=solarized-dark] table thead th {
+  border-color: #444b59;
+}
+body[data-theme=solarized-dark] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=solarized-dark] table tbody tr:nth-child(2n + 1) {
+  background-color: #073642;
+}
+body[data-theme=solarized-dark] table tbody tr:nth-child(2n) {
+  background-color: #06313b;
+}
+body[data-theme=solarized-dark] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme=solarized-dark] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=solarized-dark] kbd {
+  background-color: #1e2127;
+  color: #93a1a1;
+}
+body[data-theme=solarized-dark] dl {
+  border-color: #444b59;
+  background-color: #06313b;
+}
+body[data-theme=solarized-dark] dt {
+  border-color: #444b59;
+}
+body[data-theme=solarized-dark] dd {
+  border-color: #444b59;
+  background-color: #073642;
+}
+body[data-theme=solarized-dark] pre.fence .gallery .carousel-main,
+body[data-theme=solarized-dark] pre.fence .gallery .carousel-footer {
+  background-color: #073642;
+}
+body[data-theme=solarized-dark] pre.fence .gallery .prev,
+body[data-theme=solarized-dark] pre.fence .gallery .next {
+  color: #93a1a1;
+  background-color: #002b36;
+}
+body[data-theme=solarized-dark] .markdownIt-TOC-wrapper,
+body[data-theme=solarized-dark] .markdownIt-TOC-wrapper:before {
+  background-color: #062e38;
+  color: #f9f9f9;
+}
+body[data-theme=dracula] {
+  color: #f8f8f2;
+  border-color: #444b59;
+  background-color: #282a36;
+}
+body[data-theme=dracula] table thead tr {
+  background-color: #242631;
+}
+body[data-theme=dracula] table thead th {
+  border-color: #444b59;
+}
+body[data-theme=dracula] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=dracula] table tbody tr:nth-child(2n + 1) {
+  background-color: #282a36;
+}
+body[data-theme=dracula] table tbody tr:nth-child(2n) {
+  background-color: #242631;
+}
+body[data-theme=dracula] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme=dracula] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=dracula] kbd {
+  background-color: #1e2127;
+  color: #f8f8f2;
+}
+body[data-theme=dracula] dl {
+  border-color: #444b59;
+  background-color: #242631;
+}
+body[data-theme=dracula] dt {
+  border-color: #444b59;
+}
+body[data-theme=dracula] dd {
+  border-color: #444b59;
+  background-color: #282a36;
+}
+body[data-theme=dracula] pre.fence .gallery .carousel-main,
+body[data-theme=dracula] pre.fence .gallery .carousel-footer {
+  background-color: #282a36;
+}
+body[data-theme=dracula] pre.fence .gallery .prev,
+body[data-theme=dracula] pre.fence .gallery .next {
+  color: #f8f8f2;
+  background-color: #44475a;
+}
+body[data-theme=dracula] .markdownIt-TOC-wrapper,
+body[data-theme=dracula] .markdownIt-TOC-wrapper:before {
+  background-color: #22242e;
+  color: #f9f9f9;
+}
+body[data-theme=monokai] {
+  color: #f8f8f2;
+  border-color: #444b59;
+  background-color: #272822;
+}
+body[data-theme=monokai] table thead tr {
+  background-color: #23241f;
+}
+body[data-theme=monokai] table thead th {
+  border-color: #444b59;
+}
+body[data-theme=monokai] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=monokai] table tbody tr:nth-child(2n + 1) {
+  background-color: #272822;
+}
+body[data-theme=monokai] table tbody tr:nth-child(2n) {
+  background-color: #23241f;
+}
+body[data-theme=monokai] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme=monokai] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=monokai] kbd {
+  background-color: #1e2127;
+  color: #f8f8f2;
+}
+body[data-theme=monokai] dl {
+  border-color: #444b59;
+  background-color: #23241f;
+}
+body[data-theme=monokai] dt {
+  border-color: #444b59;
+}
+body[data-theme=monokai] dd {
+  border-color: #444b59;
+  background-color: #272822;
+}
+body[data-theme=monokai] pre.fence .gallery .carousel-main,
+body[data-theme=monokai] pre.fence .gallery .carousel-footer {
+  background-color: #272822;
+}
+body[data-theme=monokai] pre.fence .gallery .prev,
+body[data-theme=monokai] pre.fence .gallery .next {
+  color: #fff;
+  background-color: #373831;
+}
+body[data-theme=monokai] .markdownIt-TOC-wrapper,
+body[data-theme=monokai] .markdownIt-TOC-wrapper:before {
+  background-color: #21221d;
+  color: #f9f9f9;
+}
+body[data-theme=nord] {
+  color: #d8dee9;
+  border-color: #444b59;
+  background-color: #2e3440;
+}
+body[data-theme=nord] table thead tr {
+  background-color: #292f3a;
+}
+body[data-theme=nord] table thead th {
+  border-color: #444b59;
+}
+body[data-theme=nord] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=nord] table tbody tr:nth-child(2n + 1) {
+  background-color: #2e3440;
+}
+body[data-theme=nord] table tbody tr:nth-child(2n) {
+  background-color: #292f3a;
+}
+body[data-theme=nord] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme=nord] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=nord] kbd {
+  background-color: #d8dee9;
+  color: #2e3440;
+}
+body[data-theme=nord] dl {
+  border-color: #444b59;
+  background-color: #292f3a;
+}
+body[data-theme=nord] dt {
+  border-color: #444b59;
+}
+body[data-theme=nord] dd {
+  border-color: #444b59;
+  background-color: #2e3440;
+}
+body[data-theme=nord] pre.fence .gallery .carousel-main,
+body[data-theme=nord] pre.fence .gallery .carousel-footer {
+  background-color: #2e3440;
+}
+body[data-theme=nord] pre.fence .gallery .prev,
+body[data-theme=nord] pre.fence .gallery .next {
+  color: #d8dee9;
+  background-color: #434c5e;
+}
+body[data-theme=nord] .markdownIt-TOC-wrapper,
+body[data-theme=nord] .markdownIt-TOC-wrapper:before {
+  background-color: #272c36;
+  color: #f9f9f9;
+}
+body[data-theme=vulcan] {
+  color: #999;
+  border-color: #444b59;
+  background-color: #161719;
+}
+body[data-theme=vulcan] table thead tr {
+  background-color: #141517;
+}
+body[data-theme=vulcan] table thead th {
+  border-color: #444b59;
+}
+body[data-theme=vulcan] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=vulcan] table tbody tr:nth-child(2n + 1) {
+  background-color: #161719;
+}
+body[data-theme=vulcan] table tbody tr:nth-child(2n) {
+  background-color: #141517;
+}
+body[data-theme=vulcan] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme=vulcan] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme=vulcan] kbd {
+  background-color: #ccc;
+  color: #161719;
+}
+body[data-theme=vulcan] dl {
+  border-color: #444b59;
+  background-color: #141517;
+}
+body[data-theme=vulcan] dt {
+  border-color: #444b59;
+}
+body[data-theme=vulcan] dd {
+  border-color: #444b59;
+  background-color: #161719;
+}
+body[data-theme=vulcan] pre.fence .gallery .carousel-main,
+body[data-theme=vulcan] pre.fence .gallery .carousel-footer {
+  background-color: #161719;
+}
+body[data-theme=vulcan] pre.fence .gallery .prev,
+body[data-theme=vulcan] pre.fence .gallery .next {
+  color: #a3a8ae;
+  background-color: #282a2e;
+}
+body[data-theme=vulcan] .markdownIt-TOC-wrapper,
+body[data-theme=vulcan] .markdownIt-TOC-wrapper:before {
+  background-color: #131415;
+  color: #f9f9f9;
+}
+/*# sourceMappingURL=browser/components/markdown.css.map */
+
+body {
+  font-family: 'Lato','meiryo','Microsoft YaHei','helvetica','arial','sans-serif';
+  font-size: 14px;
+
+  
+  
+  
+}
+@media print {
+  body {
+    padding-bottom: initial;
+  }
+}
+code {
+  font-family: 'Monaco','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+  background-color: rgba(0,0,0,0.04);
+  text-align: left;
+  direction: ltr;
+}
+.lineNumber {
+  display: block !important;
+  font-family: 'Monaco','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+}
+
+.clipboardButton {
+  color: rgba(147,147,149,0.8);;
+  fill: rgba(147,147,149,1);;
+  border-radius: 50%;
+  margin: 0px 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.clipboardButton:hover {
+  transition: 0.2s;
+  color: #939395;
+  fill: #939395;
+  background-color: rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  border: none;
+}
+
+h3 {
+  margin: 1em 0 0.8em;
+}
+
+h4, h5, h6 {
+  margin: 1.1em 0 0.5em;
+}
+
+h1 {
+  padding: 0.2em 0 0.2em;
+  margin: 1em 0 8px;
+}
+
+h2 {
+  padding: 0.2em 0 0.2em;
+  margin: 1em 0 0.7em;
+}
+
+body p {
+  white-space: normal;
+}
+
+@media print {
+  body[data-theme="default"] {
+    color: #000;
+    background-color: #fff;
+  }
+  .clipboardButton {
+    display: none
+  }
+}
+
+
+</style>
+                 <link rel="stylesheet" href="../css/dracula.css"><link rel="stylesheet" href="../css/katex.min.css"><link rel="stylesheet" href="../css/codemirror.css"><link rel="stylesheet" href="../css/main.min.css">
+               </head>
+               <body><h1 id="MiniMagnus-Build-Guide" data-line="0">MiniMagnus Build Guide</h1>
+<p data-line="1">You can build your own MiniMagnus using this guide.</p>
+<h2 id="Parts-List" data-line="3">Parts List</h2>
+<p data-line="4">(Note: This list assumes you will use 9x Pis. You can start with as few as 2x Pis.)</p>
+<ul>
+<li data-line="5">9x Raspberry Pis<br>
+We recommend going with 3B or 3B+ - note that the Pi 4B and up are NOT supported. This is because the graphics stack in the Pi 4B is different and not yet supported by the demos.</li>
+<li data-line="7">9x microSD cards (at least 16GB in size), preferably from SanDisk or Samsung.</li>
+<li data-line="8">9x USB to microUSB cables (preferably glowing)<br>
+During testing, you may want to use cables with an in-line power toggle switch.</li>
+<li data-line="10">2x GeeekPi Raspberry Pi Cluster Case Raspberry Pi Case with Cooling Fan<br>
+This cluster case houses 4x Pis, for a total of 8, and includes heatsinks and fans to keep them cool.</li>
+<li data-line="12">Flirc Raspberry Pi Case Gen2 (New Model)<br>
+This case acts as a heatsink, and is used to keep the Prime node cool. You may not be able to find this exact case - either a decent metal case or a case with active cooling will do.</li>
+<li data-line="14">Standard HDMI cable</li>
+<li data-line="15">USB keyboard and mouse for initial setup + debugging</li>
+<li data-line="16">Sabrent 10-Port 60W USB 3.0 Hub (or equivalent) to power the nodes.</li>
+<li data-line="17">TP-Link TL-SG116 16-port Gigabit Ethernet Switch (or equivalent) to provide networking to the nodes.</li>
+<li data-line="18">Ubiquiti EdgeRouter X (or equivalent) to provide DHCP and Internet services.</li>
+<li data-line="19">11x ethernet cables (one for each Pi, one to connect the switch and the router, and one to connect the router to a network)</li>
+<li data-line="20">Mayflash MAGIC-NS adapter for connecting an appropriate Bluetooth gamepad.</li>
+<li data-line="21">Sony PlayStation 4 DualShock 4 Controller (recommended)</li>
+</ul>
+<h2 id="Initial-Physical-Build" data-line="23">Initial Physical Build</h2>
+<ul>
+<li data-line="24">Label each of the nodes with a number (the side of the Ethernet port is a good place to put the label).</li>
+<li data-line="25">Take the first node (labelled “1”) and install it into the Flirc case. This will be the Prime node.</li>
+<li data-line="26">Install 4x nodes into each of the cluster cases. This will take a while - expect about 2-3 hours of building.</li>
+<li data-line="27">Connect the Ethernet cables from the nodes to the switch. Port 1 should go to the Prime node (node 1), port 2 to node 2, etc.</li>
+<li data-line="28">Plug in the EdgeRouter X, and configure it appropriately. (This is beyond the scope of ths document at this stage, but feel free to ask us for help if you run into trouble).</li>
+<li data-line="29">Connect the EdgeRouter X to port 16 on the switch.</li>
+<li data-line="30">(Optionally) connect your management laptop to port 15 on the switch.</li>
+</ul>
+<h2 id="Getting-Started" data-line="32">Getting Started</h2>
+<ul>
+<li data-line="33">Download and extract the latest Raspbian 32-bit image (“Raspberry Pi OS (32-bit) with desktop”)</li>
+<li data-line="34">Prepare the microSD cards by flashing that image to them, using either balenaEtcher or Raspberry Pi Imager</li>
+<li data-line="35">Insert the microSD card into each Pi</li>
+</ul>
+<h2 id="First-boot-and-configuration" data-line="37">First boot and configuration</h2>
+<p data-line="38">We’ll set up the nodes one-by-one to keep things simple. You’ll need to follow these steps for each of your Pis.</p>
+<ul>
+<li data-line="40">Attach a keyboard and mouse, and connect the node to a suitable TV or monitor using an HDMI cable</li>
+<li data-line="41">Turn on the node and wait for it to boot</li>
+<li data-line="42">Run through the Raspberry Pi setup wizard, skipping the WiFi and update steps. Click Restart when prompted.</li>
+<li data-line="43">Once the Pi reboots, click the Pi icon in the top left, then go to Preferences -&gt; Raspberry Pi Configuration.</li>
+<li data-line="44">Change the Hostname from “raspberrypi” to “piX” where X is the node number for the node. (for example, the prime node will be called pi1)</li>
+<li data-line="45">Click the Interfaces tab and enable SSH</li>
+<li data-line="46">Click OK, then reboot when prompted.</li>
+</ul>
+<p data-line="48">Now it’s time to set up the networking.</p>
+<ul>
+<li data-line="50">Open up the EdgeRouter X control panel (<a href="https://10.99.86.1">https://10.99.86.1</a>) and log into it.</li>
+<li data-line="51">Go to the Services tab</li>
+<li data-line="52">Next to LAN, click the Actions dropdown, then click View Leases.</li>
+<li data-line="53">You should see your Pi in the lease list. Click the “Map Static IP” button.</li>
+<li data-line="54">Give the Pi an appropriate IP - we suggest 10.99.86.10X, where (again) X is the node number. Ensure its name is correct, then hit Save.</li>
+<li data-line="55">Reboot the Pi</li>
+<li data-line="56">In a terminal, check that the Pi now has the correct IP (“ip a” or similar)</li>
+</ul>
+<p data-line="58">The node is now ready to be configured.</p>
+<h2 id="Initial-Software-build" data-line="60">Initial Software build</h2>
+<p data-line="61">Now it’s time to install, configure and compile everything needed for MiniMagnus to work.</p>
+<h3 id="Ansible" data-line="63">Ansible</h3>
+<p data-line="64">There’s an Ansible playbook that does most of the initial software setup for you.</p>
+<p data-line="66">Go to <a href="https://gitlab.com/zorlin/minimagnus">the MiniMagnus repository</a> and follow the instructions, then return to this document when you’re done there.</p>
+<h3 id="Setting-up-and-pairing-the-controller" data-line="68">Setting up and pairing the controller</h3>
+<ul>
+<li data-line="69">(Optional) Plug the MAGIC-NS into a Windows PC and use the update software to ensure it’s running the latest firmware. You can probably skip this step unless you are having issues.</li>
+<li data-line="70">Plug the MAGIC-NS into the Prime node. It will light up.</li>
+<li data-line="71">Press and hold the little button on the side for 3-5 seconds. The LED will change and cycle through the different input modes. Keep changing modes until the LED turns GREEN.</li>
+<li data-line="72">Take your PlayStation 4 controller, and hold the SHARE button and the PlayStation logo button at the same time. The light bar on the top of the controller should start flashing rapidly.</li>
+<li data-line="73">Press the button on the side of the MAGIC-NS. It should briefly flash rapidly then turn solid green once the pairing is done.</li>
+<li data-line="74">Reboot the Prime node.</li>
+<li data-line="75">Once the Prime node is back up and at the desktop, turn the controller on and move the left thumbstick. It should now control the mouse.</li>
+</ul>
+<h3 id="Getting-the-SPH-demo-working" data-line="77">Getting the SPH demo working</h3>
+<p data-line="78">The Ansible playbook will have placed most of the resources needed for the SPH demo in the appropriate places.</p>
+<p data-line="80">You will need to build the SPH demo and push it to the compute nodes.</p>
+<ul>
+<li data-line="82">
+<p data-line="82">On your prime node, change to the /home/pi/SPH directory<br>
+<code>cd /home/pi/SPH</code></p>
+</li>
+<li data-line="85">
+<p data-line="85">Edit the makefile and ensure all of your compute nodes are listed in the “copy” section<br>
+<code>nano makefile</code></p>
+</li>
+<li data-line="88">
+<p data-line="88">Run <code>make</code> to compile the demo<br>
+<code>make</code></p>
+</li>
+<li data-line="91">
+<p data-line="91">Now run <code>make run</code> to push it out and try it.<br>
+<code>make run</code></p>
+</li>
+</ul>
+<p data-line="94">Check that everything seems to work. To exit the demo, hit the “SHARE” button,<br>
+then move the “leaf” cursor over the Terminal image and press the “X” button.</p>
+<p data-line="97">Now that the SPH demo has been built and pushed, it can be run by the Kiosk script later.</p>
+<h3 id="Getting-the-PiBrot-Mandelbrot-demo-working" data-line="99">Getting the PiBrot (Mandelbrot) demo working</h3>
+<p data-line="100">As with the SPH demo, the Ansible run will have already placed most resources needed for PiBrot.</p>
+<p data-line="102">You will need to build the PiBrot demo and push it to the compute nodes.</p>
+<ul>
+<li data-line="104">
+<p data-line="104">On your prime node, change to the /home/pi/PiBrot directory<br>
+<code>cd /home/pi/PiBrot</code></p>
+</li>
+<li data-line="107">
+<p data-line="107">Edit the makefile and ensure all of your compute nodes are listed in the “PIS=” variable<br>
+<code>nano Makefile</code></p>
+</li>
+<li data-line="110">
+<p data-line="110">Run <code>make</code> to compile the demo<br>
+<code>make</code></p>
+</li>
+<li data-line="113">
+<p data-line="113">Run <code>make run</code> to push it out and try it.<br>
+<code>make run</code></p>
+</li>
+</ul>
+<p data-line="116">To start the demo, move the left thumbstick on your controller. A leaf “cursor” will appear. Hover it over the Start button and press X.</p>
+<p data-line="118">Let it run for a couple of seconds, then exit.</p>
+<p data-line="120">To exit the demo, hit the “SHARE” button,<br>
+then move the cursor over the Terminal image and press the “X” button.</p>
+<p data-line="123">Now that the PiBrot demo has been built and pushed, it can be run by the Kiosk script later.</p>
+<h3 id="Putting-it-all-together---the-Kiosk-script" data-line="125">Putting it all together - the Kiosk script</h3>
+<p data-line="126">We have included a “kiosk” script which currently lives at /home/pi/startsph. It’s a simple bash script that uses exit codes to switch between the two included TinyTitan demos.</p>
+<p data-line="128">Also included is a custom rc.local file which sets up keymapping from your gamepad’s buttons and controls to the appropriate keyboard and mouse inputs.</p>
+<p data-line="130">If you press the “PlayStation” button (the button in the middle of the controller), the Kiosk script is automatically started.</p>
+<p data-line="132">By default, the Kiosk script will boot into the SPH demo, but you can use the menu triggered by<br>
+the “SHARE” button to switch between demos. Just move the cursor as before over what you want, then hit X.</p>
+<p data-line="135">Selecting the “Terminal” icon will simply exit the Kiosk script and leave you on the Raspbian desktop.</p>
+<h2 id="Testing-it-out" data-line="137">Testing it out</h2>
+<p data-line="138">Perform one last reboot, then turn the controller on and hit the PlayStation button. The demo should roar to life. Hit the SHARE button and select Mandelbrot, and the SPH demo should close and the PiBrot demo should open.</p>
+<h2 id="Troubleshooting" data-line="140">Troubleshooting</h2>
+<ul>
+<li data-line="141">If you can’t connect to a node with its hostname (eg, ssh pi@pi1.local), try installing the “netatalk” package. It’ll be installed by the first Ansible run.</li>
+<li data-line="142">If you’re having trouble trying to control the simulation, you may need to edit which event listeners are in use. These can be found in SPH/src/egl_utils.c (lines 178 and 179) and PiBrot/egl_utils.c (lines 173 and 174). You’ll need to recompile the software if you do this.</li>
+<li data-line="143">If you want to test out the demos using mouse and keyboard (no controller), edit the files above so that they use event0 and event1.</li>
+<li data-line="144">If a simulation freezes or you need to kill the simulation for any other reason, SSH into the Prime node and run ~/killdemos.sh</li>
+</ul>
+</body>
+            </html>
