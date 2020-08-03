@@ -64,7 +64,7 @@ Now it's time to install, configure and compile everything needed for MiniMagnus
 ### Ansible
 There's an Ansible playbook that does most of the initial software setup for you.
 
-Go to [the MiniMagnus repository](https://gitlab.com/zorlin/minimagnus) and follow the instructions, then return to this document when you're done there.
+Go to [the MiniMagnus repository](https://github.com/PawseySC/minimagnus) and follow the instructions, then return to this document when you're done there.
 
 ### Setting up and pairing the controller
 * (Optional) Plug the MAGIC-NS into a Windows PC and use the update software to ensure it's running the latest firmware. You can probably skip this step unless you are having issues.
