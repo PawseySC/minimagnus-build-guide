@@ -1,9 +1,3 @@
-This document is intended to be rendered using Boostnote.
+This document (guide.md) is the MiniMagnus Build Guide. It can be used to build your own MiniMagnus cluster (based on ORNL's TinyTitan project).
 
-Generally speaking, Boostnote is used to interpret the doc and then render it to HTML which is then copied into Confluence.
-
-This repo contains the "latest" version of the document and serves to track changes to it.
-
-It also contains an HTML rendering of the document which is NOT guaranteed to be up to date but provided for convenience.
-
-(This is Revision 1).
+It's intended to be rendered using Boostnote. An HTML rendering has been included for your convenience.
